@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CHAMANDO O CSS EXTERNO -->
+    <link rel="stylesheet" href="../css/estilo.css"> 
+    <title>Quiz</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="logo">Seja Bem-Vindo ao Questionário</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./carros.html">Carros</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="container-quiz">
+        <div class="quiz">
+            <h1>Quiz Carros</h1>
+            <section id="container-perguntas">
+                <h2 id="pergunta"></h2>
+                <div id="container-respostas">
+                     <input type="text" id="resposta" placeholder="Digite sua resposta">
+                </div>
+                    <button id="proximo">Próxima Pergunta</button>
+                    <p id="message"></p>
+            </section>
+
+            <section id="container-resultado" class="hidden">
+                <h2>Resultado do quiz</h2>
+                <ul id="lista-resultado"></ul>
+                <button id="inicio-btn">Reiniciar</button>
+            </section>
+        </div>
+    </main>
+  
+    <footer>
+        <h5>&copy; 2025-todos os direitos reservados</h5>
+    </footer>
+
+    <!-- CHAMANDO O SCRIPT DO QUIZ -->
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

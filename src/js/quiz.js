@@ -1,3 +1,8 @@
+
+  alert("Seja bem-vindo ao questionário!");
+
+
+
 // Definindo as perguntas e respostas
 const perguntas = [
     {
@@ -116,13 +121,16 @@ function carregarPergunta() {
     document.getElementById("message").textContent = ''; // Limpar mensagem
 }
 
-// Função para verificar a resposta
+// Função para verificar a resposta e mostrar alert
 function verificarResposta() {
     const respostaElement = document.getElementById("resposta");
     const respostaUser = respostaElement.value.trim();
 
     if (respostaUser.toLowerCase() === perguntas[perguntaAtual].correta.toLowerCase()) {
         respostasCorretas++;
+        alert("Resposta correta!");
+    } else {
+        alert(`Resposta errada! A resposta correta é: "${perguntas[perguntaAtual].correta}".`);
     }
 }
 
@@ -184,3 +192,4 @@ document.getElementById("inicio-btn").addEventListener("click", reiniciarQuiz);
 
 // Carregar a primeira pergunta ao iniciar a página
 window.onload = carregarPergunta;
+

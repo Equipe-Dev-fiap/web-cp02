@@ -215,3 +215,77 @@ footer {
     margin-top: 10px;
   }
 }
+/* CSS CARROS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+#body-carros {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+  color: #222;
+}
+#main-carros {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.car-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+.car-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.car-content {
+  flex: 1;
+  padding: 1rem 1.5rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.car-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: #00796b;
+}
+.car-desc {
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #555;
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+.btn-quiz {
+  align-self: start;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 12px rgba(0,121,107,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-quiz:hover,
+.btn-quiz:focus {
+  background-color: #004d40;
+  box-shadow: 0 8px 20px rgba(0,77,64,0.6);
+}

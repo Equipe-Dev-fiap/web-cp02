@@ -4,6 +4,7 @@ let imagens =[
     'src/assets/carro1.jpg',
     'src/assets/carro2.jpg',
     'src/assets/carro3.jpg',
+    'src/assets/carro4.jpg',
 ];
 
 //DECLARANDO AS VARIAVEIS

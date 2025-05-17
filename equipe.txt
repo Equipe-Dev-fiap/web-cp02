@@ -3,4 +3,4 @@ Rafael Augusto Carmona RM: 563758
 Eduardo Tolentino RM: 562169
 Enzo Hort Ramos RM: 561872
 
-LINK DO REPOSITÓRIO NO GIT HUB:
+LINK DO REPOSITÓRIO NO GIT HUB: https://github.com/Equipe-Dev-fiap/web-cp02.git
